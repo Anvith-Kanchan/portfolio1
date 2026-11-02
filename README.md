@@ -1,8 +1,10 @@
 # Anvith Kanchan — Portfolio
 
-Responsive single-page engineering portfolio built with React and Vite.
+Responsive single-page engineering portfolio built with React, Vite, and CSS.
 
 ## Run locally
+
+From the repository root:
 
 ```bash
 npm install
@@ -16,27 +18,25 @@ npm run build
 npm run preview
 ```
 
-## Deploy with Cloudflare Pages
+Vite writes the production-ready static files to `dist/`.
 
-This repository is configured for a root-hosted Cloudflare Pages deployment.
+## Production hosting
 
-In Cloudflare, open **Workers & Pages → Create application → Pages → Connect to Git** and select this GitHub repository. Set:
+The live site is hosted on **Cloudflare Workers**:
 
-| Setting | Value |
-| --- | --- |
-| Production branch | `main` |
-| Framework preset | React (Vite), or configure manually |
-| Build command | `npm run build` |
-| Build output directory | `dist` |
-| Root directory | `/` (repository root; leave the default) |
-| Node.js version | `22.23.4` (also pinned in `.node-version`) |
+**https://portfolio1.anvian.workers.dev/**
 
-Cloudflare Pages Git integration automatically builds and deploys new commits to the production branch and can create preview deployments for other branches.
+This is a Workers deployment using the `workers.dev` hostname. It is not a GitHub Pages or Cloudflare Pages deployment.
 
-## Content
+The `portfolio1` Worker already exists in Cloudflare. To publish an update, use the deployment method configured for that Worker and publish the latest Vite build from `dist/`. Check **Cloudflare Dashboard → Workers & Pages → portfolio1 → Deployments** to confirm that a deployment completed.
 
-Project details and technical claims are limited to the supplied resume. The LinkedIn destination can be updated in `src/main.jsx` with the exact profile URL.
+## Project details
 
-## Tech
+Portfolio content is based on the supplied resume. The LinkedIn destination in `src/main.jsx` can be replaced with the exact profile URL when available.
 
-React, Vite, CSS, Cloudflare Pages.
+## Stack
+
+- React
+- Vite
+- CSS
+- Cloudflare Workers

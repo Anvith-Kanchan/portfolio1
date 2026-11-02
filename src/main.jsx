@@ -60,8 +60,7 @@ function App(){
           <p className="hero-lede">I’m Anvith Kanchan, a computer science undergraduate interested in backend engineering, applied AI, and security-focused systems.</p>
           <div className="hero-actions"><a className="button button-dark" href="#work">Explore selected work <Arrow/></a><a className="text-link" href="mailto:anvithkanchan.ci23@bmsce.ac.in">Get in touch <Arrow diagonal/></a></div>
         </div>
-        <aside className="hero-note" aria-label="Professional snapshot"><div className="note-rule"></div><span className="eyebrow">CURRENTLY</span>
-          <p>Researching privacy-preserving similarity search at <strong>Samsung R&D</strong>.</p><div className="note-rule"></div><span className="eyebrow">EDUCATION</span>
+        <aside className="hero-note" aria-label="Education"><div className="note-rule"></div><span className="eyebrow">EDUCATION</span>
           <p>B.E. Computer Science & Engineering<br/><strong>B. M. S. College of Engineering</strong></p>
           <div className="note-meta"><span>CGPA</span><strong>8.91 / 10</strong></div><div className="note-meta"><span>EXPECTED GRADUATION</span><strong>JUNE 2027</strong></div>
         </aside>
