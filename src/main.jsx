@@ -26,7 +26,6 @@ function Header(){
     <button className="menu-toggle" aria-expanded={open} aria-label="Toggle navigation" onClick={()=>setOpen(!open)}>{open?'Close':'Menu'}</button>
     <nav className={open?'nav open':'nav'} aria-label="Main navigation">
       {links.map(([label,href])=><a key={href} href={href} onClick={()=>setOpen(false)}>{label}</a>)}
-      <a className="nav-resume" href="/portfolio/Anvith-Kanchan-Resume.pdf" target="_blank" rel="noreferrer">Resume <Arrow diagonal/></a>
     </nav>
   </header>;
 }
@@ -57,13 +56,13 @@ function App(){
     <Header/><main>
       <section className="hero wrap">
         <div className="hero-copy"><div className="availability"><span className="availability-dot"></span> COMPUTER SCIENCE · BENGALURU, INDIA</div>
-          <h1>Engineering systems<br>with <em>purpose.</em></h1>
+          <h1>Engineering systems<br/>with <em>purpose.</em></h1>
           <p className="hero-lede">I’m Anvith Kanchan, a computer science undergraduate interested in backend engineering, applied AI, and security-focused systems.</p>
           <div className="hero-actions"><a className="button button-dark" href="#work">Explore selected work <Arrow/></a><a className="text-link" href="mailto:anvithkanchan.ci23@bmsce.ac.in">Get in touch <Arrow diagonal/></a></div>
         </div>
         <aside className="hero-note" aria-label="Professional snapshot"><div className="note-rule"></div><span className="eyebrow">CURRENTLY</span>
           <p>Researching privacy-preserving similarity search at <strong>Samsung R&D</strong>.</p><div className="note-rule"></div><span className="eyebrow">EDUCATION</span>
-          <p>B.E. Computer Science & Engineering<br><strong>B. M. S. College of Engineering</strong></p>
+          <p>B.E. Computer Science & Engineering<br/><strong>B. M. S. College of Engineering</strong></p>
           <div className="note-meta"><span>CGPA</span><strong>8.91 / 10</strong></div><div className="note-meta"><span>EXPECTED GRADUATION</span><strong>JUNE 2027</strong></div>
         </aside>
         <div className="hero-index"><span>01</span><span>BUILD / TEST / REFINE</span><span>SCROLL TO EXPLORE ↓</span></div>
@@ -74,7 +73,7 @@ function App(){
         <div className="work-footnote">Project summaries reflect the work described in my resume. Detailed case studies and public demos will be added as they are ready.</div>
       </div></section>
       <section id="experience" className="section section-experience"><div className="wrap">
-        <div className="eyebrow">EXPERIENCE / 2026</div><div className="experience-layout"><div><h2>Research, then<br><em>make it work.</em></h2></div>
+        <div className="eyebrow">EXPERIENCE / 2026</div><div className="experience-layout"><div><h2>Research, then<br/><em>make it work.</em></h2></div>
           <div className="experience-detail"><div className="experience-top"><h3>Samsung R&D</h3><span>RESEARCH & DEVELOPMENT INTERN</span></div>
             <p className="experience-summary">Privacy-preserving similarity search using homomorphic encryption and vector databases.</p>
             <ul><li>Collaborated with senior researchers to design and evaluate system architectures for encrypted similarity search.</li><li>Built and tested encrypted-query approaches, considering performance, scalability, and data confidentiality.</li><li>Applied secure software design principles while building and troubleshooting systems, incorporating feedback from senior engineers.</li></ul>
@@ -99,7 +98,7 @@ function App(){
         <div className="cert-list"><div><span>01</span><strong>Introduction to AI</strong><small>Google</small></div><div><span>02</span><strong>Introduction to Amazon EC2</strong><small>AWS Skill Builder</small></div></div>
       </div></section>
       <section id="contact" className="contact-section"><div className="wrap">
-        <div className="eyebrow">CONTACT / OPEN TO CONVERSATION</div><h2>Have a thoughtful<br><em>problem to solve?</em></h2>
+        <div className="eyebrow">CONTACT / OPEN TO CONVERSATION</div><h2>Have a thoughtful<br/><em>problem to solve?</em></h2>
         <div className="contact-bottom"><a className="contact-email" href="mailto:anvithkanchan.ci23@bmsce.ac.in">anvithkanchan.ci23@bmsce.ac.in <Arrow diagonal/></a>
           <div className="contact-links"><a href="https://github.com/Anvith-Kanchan" target="_blank" rel="noreferrer">GitHub <Arrow diagonal/></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <Arrow diagonal/></a><a href="tel:+918105459960">+91 81054 59960</a></div>
         </div>
